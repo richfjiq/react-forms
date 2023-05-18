@@ -19,15 +19,15 @@ const Navbar: FC<Props> = ({ children }) => {
               to="/register"
               className={({ isActive }) => (isActive ? 'nav-active' : '')}
             >
-              Register
+              Register Page
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/about"
+              to="/formik-basic"
               className={({ isActive }) => (isActive ? 'nav-active' : '')}
             >
-              About
+              Formik Basic
             </NavLink>
           </li>
           <li>

@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import Navbar from '../components/Navbar';
 import { RegisterPage } from '../forms/pages/RegisterPage';
+import { FormikBasicPage } from '../forms/pages/FormikBasicPage';
 
 const Navigation = () => {
   return (
@@ -16,10 +17,10 @@ const Navigation = () => {
           }
         />
         <Route
-          path="about"
+          path="formik-basic"
           element={
             <Navbar>
-              <h1>About Page</h1>
+              <FormikBasicPage />
             </Navbar>
           }
         />
@@ -31,7 +32,7 @@ const Navigation = () => {
             </Navbar>
           }
         />
-        <Route path="/*" element={<Navigate to="/home" replace />} />
+        <Route path="/*" element={<Navigate to="/formik-basic" replace />} />
       </Routes>
     </BrowserRouter>
   );
