@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import { RegisterPage } from '../forms/pages/RegisterPage';
 import { FormikBasicPage } from '../forms/pages/FormikBasicPage';
 import { FormikYupPage } from '../forms/pages/FormikYupPage';
+import { FormikComponents } from '../forms/pages/FormikComponents';
 
 const Navigation = () => {
   return (
@@ -30,6 +31,14 @@ const Navigation = () => {
           element={
             <Navbar>
               <FormikYupPage />
+            </Navbar>
+          }
+        />
+        <Route
+          path="formik-components"
+          element={
+            <Navbar>
+              <FormikComponents />
             </Navbar>
           }
         />

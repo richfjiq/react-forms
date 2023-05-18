@@ -40,6 +40,14 @@ const Navbar: FC<Props> = ({ children }) => {
           </li>
           <li>
             <NavLink
+              to="/formik-components"
+              className={({ isActive }) => (isActive ? 'nav-active' : '')}
+            >
+              Formik Components
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/users"
               className={({ isActive }) => (isActive ? 'nav-active' : '')}
             >
