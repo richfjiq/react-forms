@@ -1,10 +1,13 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import Navbar from '../components/Navbar';
-import { RegisterPage } from '../forms/pages/RegisterPage';
-import { FormikBasicPage } from '../forms/pages/FormikBasicPage';
-import { FormikYupPage } from '../forms/pages/FormikYupPage';
-import { FormikComponents } from '../forms/pages/FormikComponents';
+import {
+  FormikAbstraction,
+  FormikBasicPage,
+  FormikComponents,
+  FormikYupPage,
+  RegisterPage,
+} from '../forms/pages';
 
 const Navigation = () => {
   return (
@@ -39,6 +42,14 @@ const Navigation = () => {
           element={
             <Navbar>
               <FormikComponents />
+            </Navbar>
+          }
+        />
+        <Route
+          path="formik-abstraction"
+          element={
+            <Navbar>
+              <FormikAbstraction />
             </Navbar>
           }
         />
