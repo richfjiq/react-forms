@@ -2,10 +2,12 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import Navbar from '../components/Navbar';
 import {
+  DynamicForm,
   FormikAbstraction,
   FormikBasicPage,
   FormikComponents,
   FormikYupPage,
+  RegisterFormikPage,
   RegisterPage,
 } from '../forms/pages';
 
@@ -50,6 +52,22 @@ const Navigation = () => {
           element={
             <Navbar>
               <FormikAbstraction />
+            </Navbar>
+          }
+        />
+        <Route
+          path="formik-register"
+          element={
+            <Navbar>
+              <RegisterFormikPage />
+            </Navbar>
+          }
+        />
+        <Route
+          path="dynamic-form"
+          element={
+            <Navbar>
+              <DynamicForm />
             </Navbar>
           }
         />
